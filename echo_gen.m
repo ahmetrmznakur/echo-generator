@@ -24,7 +24,7 @@ function lastans = echo_gen(input, fs, delay, amp)
     for tt = 1:combinedVecLong
         if combinedVec(tt,1) < -1  % for clearing sound a little it is keepen in a certain range
             combinedVec(tt,1) = -1;
-        elseif combinedVec(tt,1) > 1 % same clearing purposes
+        elseif combinedVec(tt,1) > 1 % same clearing purposes as above
             combinedVec(tt,1) = 1;
         end
     end
